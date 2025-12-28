@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
-import { uploadToCloudinary } from "@/lib/cloudinary";
-import { callN8n } from "@/lib/n8n";
+import { uploadToCloudinary } from "../../../lib/cloudinary";
+import { callN8n } from "../../../lib/n8n";
+
 
 export async function POST(req: Request) {
   const formData = await req.formData();
